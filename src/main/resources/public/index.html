@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server Index</title>
+</head>
+<body>
+<h1>Welcome to the Web Server</h1>
+<p>This is the index page.</p>
+
+<h2>Pages</h2>
+<ul>
+    <li><a href="/page1.html">Page 1</a></li>
+    <li><a href="/page2.html">Page 2</a></li>
+</ul>
+
+<h2>Images</h2>
+<button onclick="loadImage('example.png')">Load Image</button>
+<img id="dynamicImage" src="" alt="Sample Image" style="display:none;">
+
+<h2>JavaScript</h2>
+<script>
+    function loadImage(imagePath) {
+        var img = document.getElementById('dynamicImage');
+        img.src = imagePath;
+        img.style.display = 'block';
+    }
+
+    function displayAlert() {
+        alert('Hello! This is an alert.');
+    }
+</script>
+</body>
+</html>
+
+
